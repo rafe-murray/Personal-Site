@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="manifest" href="site.webmanifest">
-        <title>Rafe Murray's Personal Website</title>
+        <title>Projects | Rafe Murray's Personal Website</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -17,9 +17,9 @@
             <a class="home" href="https://rafe-murray.github.io/Personal-Site">
                 <i class="fa fa-home"></i>
             </a>
-            <a class="active" href="https://rafe-murray.github.io/Personal-Site">Home</a>
+            <a href="https://rafe-murray.github.io/Personal-Site">Home</a>
             <a href="experience">Experience</a>
-            <a href="projects">Projects</a>
+            <a class="active" href="projects">Projects</a>
             <a href="education">Education</a>
             <a href="contact-me">Contact Me</a>
             <a href="about">About</a>
@@ -30,11 +30,14 @@
         <div class="container">
             <div class="title-wrapper">
                 <div class="title">
-                    <h1>Welcome to Rafe Murray's personal website</h1>
+                    <h1>Projects</h1>
                 </div>
             </div>
             <div class="content">
-                <p>This site is still a work in progress. Feel free to leave any suggestions for improvements by <a href="contact-me">contacting me</a>.</p>
+                <div id="scrapers" class="content-item">
+                    <h2>Web Scraping</h2>
+                    <p>In May and June of 2024 as part of <a href="experience#jma">my work with JMA Consulting</a>, I updated or rewrote 78 scrapers for Open North Represent's opencivicdata project. These scrapers get the name, role, ward, and contact information for each member of the municipal council for a municpality and store them in a database. These scrapers were built using pupa, a library that Open North created for building scrapers, as well as the more generel python libraries urllib3, requests, and json, among others. Another contribution I made to the project was that I implemented a function to find cloudflare protected emails on these sites and decode them from their protected format into a normal email. You can view the source code for the scrapers <a target="_blank" href="https://github.com/opencivicdata/scrapers-ca">here</a> on Github.</p>
+                </div>
             </div>
             <div class="spacer"></div>
         </div>
