@@ -1,0 +1,1 @@
+export const card = "rounded-md border border-gray-300 p-4 mb-6 shadow-sm";
