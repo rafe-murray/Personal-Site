@@ -19,7 +19,7 @@ export default function Navbar(){
     );
     const mobileNavItems = items.map(item =>
         <li className="p-2 m-2 hover:bg-gray-100 rounded-md">
-            <a href={"#"+item}>{item}</a>
+            <a href={"#"+item} onClick={handleClick}>{item}</a>
         </li>
     );
     return(
