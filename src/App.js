@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Footer from "./components/Footer";
 
+import darkmode from "./darkmode";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -16,6 +17,7 @@ library.add( fab, faEnvelope, faBars);
 export default function App(){
     return(
         <>
+            <script async={true} src={darkmode}/>
             <Navbar />
             <About />
             <Skills />

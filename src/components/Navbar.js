@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Navbar(){
     ];
     const navbarItems = items.map(item =>
         <li className="p-4">
-            <a href={"#"+item} className="hover:opacity-85">{item}</a>
+            <a href={"#"+item} className="hover:text-cyan-500">{item}</a>
         </li>
     );
     const mobileNavItems = items.map(item =>
@@ -23,13 +24,14 @@ export default function Navbar(){
         </li>
     );
     return(
-        <nav className="fixed w-full bg-white border-gray-200 border text-lg font-semibold sm:px-8 px-3 shadow-sm">
-            <a href="/" className="float-left p-4 text-zinc-900">Rafe Murray</a>
-            <ul className="text-zinc-700 hidden sm:flex flex-row float-end">
+        <nav className="fixed w-full bg-white dark:bg-black border-gray-200 dark:border-dark-800 border-b text-lg font-semibold md:px-8 px-3 shadow-sm">
+            <a href="/" className="float-left p-4 text-zinc-900 dark:text-gray-50">Rafe Murray</a>
+            <ul className="text-zinc-700 dark:text-gray-50 hidden md:flex flex-row float-end">
+                <ThemeSwitcher />
                 {navbarItems}
             </ul>
             {/* Mobile menu */}
-            <a className="cursor-pointer float-end text-zinc-700 sm:hidden block p-4" onClick={handleClick}>
+            <a className="cursor-pointer float-end text-zinc-700 dark:text-gray-50 md:hidden block p-4" onClick={handleClick}>
                 <FontAwesomeIcon icon="fa-bars" />
             </a>
             <ul className={(menuOpen ? "block " : "hidden ") + "fixed top-14 right-4 bg-white shadow-sm border border-gray-300 rounded-lg"}>
