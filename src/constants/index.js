@@ -1,55 +1,56 @@
-import angular from '../assets/tech/angular.svg';
-import bash from '../assets/tech/bash.svg';
-import c from '../assets/tech/c.svg';
-import cpp from '../assets/tech/cpp.svg';
-import css from '../assets/tech/css.svg';
-import git from '../assets/tech/git.svg';
-import github from '../assets/tech/github.svg';
-import gitlab from '../assets/tech/gitlab.svg';
-import html from '../assets/tech/html.svg';
-import js from '../assets/tech/js.svg';
-import matlab from '../assets/tech/matlab.svg';
-import php from '../assets/tech/php.svg';
-import postgresql from '../assets/tech/postgresql.svg';
-import python from '../assets/tech/python.svg';
-import react from '../assets/tech/react.svg';
-import tailwind from '../assets/tech/tailwind.svg';
-import vim from '../assets/tech/vim.svg';
-import vscode from '../assets/tech/vscode.svg';
-import zsh from '../assets/tech/zsh.svg';
+import {ReactComponent as Angular} from '../assets/tech/angular.svg';
+import {ReactComponent as Bash} from '../assets/tech/bash.svg';
+import {ReactComponent as C} from '../assets/tech/c.svg';
+import {ReactComponent as Cpp} from '../assets/tech/cpp.svg';
+import {ReactComponent as Css} from '../assets/tech/css.svg';
+import {ReactComponent as Git} from '../assets/tech/git.svg';
+import {ReactComponent as Github} from '../assets/tech/github.svg';
+import {ReactComponent as GithubWhite} from '../assets/tech/github-white.svg';
+import {ReactComponent as Gitlab} from '../assets/tech/gitlab.svg';
+import {ReactComponent as Html} from '../assets/tech/html.svg';
+import {ReactComponent as Js} from '../assets/tech/js.svg';
+import {ReactComponent as Matlab} from '../assets/tech/matlab.svg';
+import {ReactComponent as Php} from '../assets/tech/php.svg';
+import {ReactComponent as Postgresql} from '../assets/tech/postgresql.svg';
+import {ReactComponent as Python} from '../assets/tech/python.svg';
+import {ReactComponent as React} from '../assets/tech/react.svg';
+import {ReactComponent as Tailwind} from '../assets/tech/tailwind.svg';
 
 export const skills = [
-    {title: "Angular", icon: angular, invert: false},
-    {title: "Bash", icon: bash, invert: false},
-    {title: "C", icon: c, invert: false},
-    {title: "C++", icon: cpp, invert: false},
-    {title: "CSS", icon: css, invert: false},
-    {title: "Git", icon: git, invert: false},
-    {title: "GitHub", icon: github, invert: true},
-    {title: "GitLab", icon: gitlab, invert: false},
-    {title: "HTML", icon: html, invert: false},
-    {title: "JavaScript", icon: js, invert: false},
-    {title: "MatLab", icon: matlab, invert: false},
-    {title: "PHP", icon: php, invert: false},
-    {title: "PostgreSQL", icon: postgresql, invert: false},
-    {title: "Python", icon: python, invert: false},
-    {title: "React", icon: react, invert: false},
-    {title: "Tailwind CSS", icon: tailwind, invert: false},
-    {title: "Vim", icon: vim, invert: false},
-    {title: "VSCode", icon: vscode, invert: false},
-    {title: "ZSH", icon: zsh, invert: true},
-]
+    {title: "Angular", Icon: Angular},
+    {title: "Bash", Icon: Bash},
+    {title: "C", Icon: C},
+    {title: "C++", Icon: Cpp},
+    {title: "CSS", Icon: Css},
+    {title: "Git", Icon: Git},
+    {title: "GitHub", Icon: Github, dark: GithubWhite},
+    {title: "GitLab", Icon: Gitlab},
+    {title: "HTML", Icon: Html},
+    {title: "JavaScript", Icon: Js},
+    {title: "MatLab", Icon: Matlab},
+    {title: "PHP", Icon: Php},
+    {title: "PostgreSQL", Icon: Postgresql},
+    {title: "Python", Icon: Python},
+    {title: "React", Icon: React},
+    {title: "Tailwind CSS", Icon: Tailwind},
+];
+
+const skillsList = {};
+skills.forEach(skill => {
+    skillsList[skill.title] = skill
+})
+export {skillsList}
 
 export const projects = [
-    {header: "Scrapers", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [python, postgresql]},
-    {header: "Candidate Dashboard", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [angular, js, php, html]},
-    {header: "Waitlist Functionality", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [php]},
-    {header: "JMA Website", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills:[css, html]},
-    {header: "Patching Script", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [bash, git, gitlab]},
-    {header: "Mechanical Claw", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [c, cpp]},
-    {header: "Tic-Tac-Toe Bot", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [c]},
-    {header: "Memory Game", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [c, cpp]},
-    {header: "Portfolio Website", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: [react, js, tailwind, css, html, git, github]},
+    {header: "Scrapers", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["Python", "PostgreSQL"]},
+    {header: "Candidate Dashboard", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["Angular", "JavaScript", "PHP", "HTML"]},
+    {header: "Waitlist Functionality", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["PHP"]},
+    {header: "JMA Website", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills:["CSS", "HTML"]},
+    {header: "Patching Script", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["Bash", "Git", "GitLab"]},
+    {header: "Mechanical Claw", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["C", "C++"]},
+    {header: "Tic-Tac-Toe Bot", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["C"]},
+    {header: "Memory Game", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["C", "C++"]},
+    {header: "Portfolio Website", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi.", skills: ["React", "JavaScript", "Tailwind CSS", "CSS", "HTML", "Git", "GitHub"]},
 ]
 
 export const work = [
