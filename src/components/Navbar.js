@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ThemeSwitcher from "./ThemeSwitcher";
-import shadows from "@mui/material/styles/shadows";
 
 export default function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);
