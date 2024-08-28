@@ -25,7 +25,7 @@ export default function Navbar(){
     );
     return(
         <nav className="fixed w-full bg-white dark:bg-black border-gray-200 dark:border-dark-800 border-b text-lg font-semibold md:px-8 px-3 shadow-sm">
-            <a href="/" className="float-left p-4 text-zinc-900 dark:text-gray-50">Rafe Murray</a>
+            <a href="/Personal-Site" className="float-left p-4 text-zinc-900 dark:text-gray-50">Rafe Murray</a>
             
             <ul className="text-zinc-700 dark:text-gray-50 hidden md:flex flex-row float-end">
                 {navbarItems}
