@@ -11,8 +11,8 @@ export default function About() {
                     <p className="text-lg text-gray-600 dark:text-gray-50">I'm a computer engineering student looking to solve problems involving etcetera ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit risus ut ex consequat, et aliquet arcu iaculis. Vestibulum eu eros et tellus porttitor ornare. Quisque dictum ex nibh. Suspendisse et elit et ante fringilla iaculis. Etiam posuere tortor risus, sit amet sollicitudin felis commodo vitae. Pellentesque vehicula ultrices dignissim. Nam rhoncus non lectus eget euismod. Maecenas in dapibus nibh, quis aliquet nisi. </p>
                     <div className="items-center flex py-8">
                         <Resume />
-                        <Button title='See my projects on Github' href='https://github.com/rafe-murray' icon ='fa-brands fa-github' />
-                        <Button title='View my profile on Linkedin' href='https://www.linkedin.com/in/rafe-murray' icon='fa-brands fa-linkedin' />
+                        <Button target="_blank" title='See my projects on Github' href='https://github.com/rafe-murray' icon ='fa-brands fa-github' />
+                        <Button target="_blank" title='View my profile on Linkedin' href='https://www.linkedin.com/in/rafe-murray' icon='fa-brands fa-linkedin' />
                         <Button title='Email me' href='mailto:rafemurr@gmail.com' icon='fa-regular fa-envelope' />
                     </div>
                 </div>

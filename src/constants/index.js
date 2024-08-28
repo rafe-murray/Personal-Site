@@ -10,6 +10,7 @@ import {ReactComponent as Gitlab} from '../assets/tech/gitlab.svg';
 import {ReactComponent as Html} from '../assets/tech/html.svg';
 import {ReactComponent as Js} from '../assets/tech/js.svg';
 import {ReactComponent as Matlab} from '../assets/tech/matlab.svg';
+import {ReactComponent as Mysql} from '../assets/tech/mysql.svg';
 import {ReactComponent as Php} from '../assets/tech/php.svg';
 import {ReactComponent as Postgresql} from '../assets/tech/postgresql.svg';
 import {ReactComponent as Python} from '../assets/tech/python.svg';
@@ -17,22 +18,23 @@ import {ReactComponent as React} from '../assets/tech/react.svg';
 import {ReactComponent as Tailwind} from '../assets/tech/tailwind.svg';
 
 export const skills = [
-    {title: "Angular", Icon: Angular},
+    {title: "Python", Icon: Python},
+    {title: "MySQL", Icon: Mysql},
+    {title: "PostgreSQL", Icon: Postgresql},
+    {title: "PHP", Icon: Php},
     {title: "Bash", Icon: Bash},
     {title: "C", Icon: C},
     {title: "C++", Icon: Cpp},
-    {title: "CSS", Icon: Css},
     {title: "Git", Icon: Git},
     {title: "GitHub", Icon: Github, dark: GithubWhite},
     {title: "GitLab", Icon: Gitlab},
     {title: "HTML", Icon: Html},
-    {title: "JavaScript", Icon: Js},
-    {title: "MatLab", Icon: Matlab},
-    {title: "PHP", Icon: Php},
-    {title: "PostgreSQL", Icon: Postgresql},
-    {title: "Python", Icon: Python},
-    {title: "React", Icon: React},
+    {title: "CSS", Icon: Css},
     {title: "Tailwind CSS", Icon: Tailwind},
+    {title: "JavaScript", Icon: Js},
+    {title: "React", Icon: React},
+    {title: "Angular", Icon: Angular},
+    {title: "MatLab", Icon: Matlab},   
 ];
 
 const skillsList = {};
