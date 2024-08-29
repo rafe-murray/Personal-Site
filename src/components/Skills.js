@@ -3,11 +3,6 @@ import { skills } from "../constants";
 import Skill from "./Skill";
 
 export default function Skills(){
-    // const skillCards = skills.map(skill => 
-    //     <div key={skill}>
-    //         <img title={skill.title} src={skill.icon} className={(skill.invert ? "dark:brightness-0 dark:invert dark:grayscale " : "") + "size-20 mx-auto aspect-square"} />
-    //     </div>
-    // );
     const skillCards = skills.map(skill =>
         <>
         <Skill title={skill.title} Icon={skill.Icon} className={(skill.dark ? "flex dark:hidden " : "") + "size-20 aspect-square"}/>
