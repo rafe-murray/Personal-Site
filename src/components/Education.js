@@ -1,5 +1,6 @@
 import Section from "./Section";
 import { card } from "../styles";
+import CallToAction from "./CallToAction";
 
 export default function Education(){
     const content=
@@ -12,6 +13,7 @@ export default function Education(){
                     <h4 className="pb-2">September 2023 – May 2027</h4>
                 </div>
                 <p className="text-gray-600 dark:text-gray-50">I am currently entering my second year of Computer Engineering at UBC. In first year, I achieved a 91% average, placing on the Dean’s list. In addition, I earned 98% in Introduction to Computation in Engineering Design (APSC 160). I am excited to continue to learn more about computer engineering in the coming years of my degree.</p>
+                <CallToAction path="/courses" label="See all my courses" />
             </div>    
         </div>
         <div className={card}>
