@@ -1,5 +1,5 @@
 import Resume from './Resume';
-import profilePicture from '../assets/rafe-murray.png';
+import profilePicture from '../assets/rafe-murray.jpg';
 import Button from './Button';
 
 export default function About() {
