@@ -9,7 +9,10 @@ module.exports = {
           950: '#181a1f',
           800: '#23272f',
         }
-      }
+      },
+      fontFamily: {
+        heading: ['"Maven Pro"', "sans-serif"],
+      },
     }
   },
   plugins: [],

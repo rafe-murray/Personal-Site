@@ -7,9 +7,9 @@ import Courses from "./pages/Courses";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-library.add( fab, faEnvelope, faBars, faArrowRight);
+library.add( fab, faEnvelope, faBars, faChevronLeft);
 
 export default function App(){
     return(
