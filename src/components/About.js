@@ -9,7 +9,7 @@ export default function About() {
             <div className="max-w-7xl flex flex-col sm:flex-row items-center mx-auto place-content-center p-4 pt-20 min-h-screen">
                 <div className="sm:w-2/3 sm:pr-6">
                     <h1 className={h1}>Hi, I'm Rafe</h1>
-                    <p className={p + " text-lg"}>I am an aspiring backend software developer and current computer engineering student at the University of British Columbia who has received outstanding marks and work evaluations. I am interested in machine learning, algorithms, and solving complex analytical problems.</p>
+                    <p className={p + " text-lg"}>I'm an aspiring backend software developer and current computer engineering student at the University of British Columbia who has received outstanding marks and work evaluations. I'm interested in machine learning, algorithms, and solving complex analytical problems. In my free time, I enjoy hiking and wilderness canoe tripping; lifting weights and calisthenics; and playing piano, especially Romantic era and jazz music.</p>
                     <div className="items-center flex py-8">
                         <Resume />
                         <Button target="_blank" title='See my projects on Github' href='https://github.com/rafe-murray' icon ='fa-brands fa-github' />
