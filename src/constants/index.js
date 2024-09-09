@@ -44,15 +44,15 @@ skills.forEach(skill => {
 export {skillsList}
 
 export const projects = [
-    {header: "Scrapers", content: "Reimplemented Django Python scrapers of Canadian elected officials’ information on 75 websites and stored it in a database for later use by a petition service", skills: ["Python", "PostgreSQL"]},
+    {header: "Scrapers", content: "Reimplemented Django Python scrapers of Canadian elected officials’ information on 75 websites and stored it in a database for later use by a petition service", skills: ["Python", "PostgreSQL"], github:"https://github.com/search?q=org%3Aopencivicdata+is%3Apr+author%3Arafe-murray+is%3Amerged&type=pullrequests"},
     {header: "Candidate Dashboard", content: "Developed displays of candidate information in PHP for an online educational certification system for the Construction Industry Licensing Board of Florida", skills: ["JavaScript", "PHP", "MySQL", "HTML","Angular"]},
     {header: "Waitlist Functionality", content: "Created functionality using a low code framework and PHP to manage counselling waitlists and scheduling appointments for the Sexual Assault Centre of Edmonton", skills: ["PHP","MySQL"]},
     {header: "JMA Website", content: "Implemented responsive designs from figma on a wordpress site using HTML and CSS", skills:["CSS", "HTML"]},
     {header: "Patching Script", content: "Created an internal company gitlab CI/CD pipeline on code pushes that runs my bash script to reapply patches to site files and if there are conflicts notify an administrator otherwise merge the changes to the repo without triggering the same pipeline", skills: ["Bash", "Git", "GitLab"]},
     {header: "Mechanical Claw", content: "Wrote an Arduino C++ program to read a sensor indicating when an item was in range of a claw, and then controlled a servo motor to gradually close the claw on the item", skills: ["C", "C++"]},
-    {header: "Tic-Tac-Toe Bot", content: "Developed a bot in C to read player inputs and implements strategies to always win or draw a Tic-Tac-Toe game", skills: ["C"]},
+    {header: "Tic-Tac-Toe Bot", content: "Developed a bot in C to read player inputs and implements strategies to always win or draw a Tic-Tac-Toe game", skills: ["C"], github: "https://github.com/rafe-murray/tictactoe-bot"},
     {header: "Memory Game", content: "Created a game in C++ where a player would press buttons in the order that corresponding lights had randomly flashed, with each round increasing speed. Arduino button presses and light activation were simulated with TinkerCAD", skills: ["C", "C++"]},
-    {header: "Portfolio Website", content: "Built a responsive website showcasing personal skills and accomplishments using React and Tailwind CSS, hosted through GitHub Pages", skills: ["React", "JavaScript", "Tailwind CSS", "CSS", "HTML", "Git", "GitHub"]},
+    {header: "Portfolio Website", content: "Built a responsive website showcasing personal skills and accomplishments using React and Tailwind CSS, hosted through GitHub Pages", skills: ["React", "JavaScript", "Tailwind CSS", "CSS", "HTML", "Git", "GitHub"], github: "https://github.com/rafe-murray/rafe-murray.github.io"},
 ]
 
 export const work = [
